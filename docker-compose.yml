@@ -1,0 +1,30 @@
+version: '3.3'
+services:
+
+  coin-base-redis:
+    image: redis:alpine
+
+  coin-base-mariadb:
+    image: mariadb:10.3
+    volumes:
+     - coinbase-db:/var/lib/mysql/data
+    ports:
+     - "3333:3306"
+    restart: unless-stopped
+    environment:
+      MYSQL_USER: root
+      MYSQL_DATABASE: coin-base-trader
+      MYSQL_PASSWORD: 4^ct+6mT?DMf
+      MYSQL_ROOT_PASSWORD: root
+
+  mailhog:
+    image: mailhog/mailhog:latest
+    restart: always
+
+volumes:
+  coinbase-db:
+
+networks:
+  default:
+    external:
+      name: nginx-proxy

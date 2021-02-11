@@ -1,0 +1,23 @@
+{
+  "name": "coin-base-trader",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Coin Base Trader",
+  "type":"module",
+  "scripts": {
+    "check-if-backend-running": "forever list",
+    "start-backend": "cd backend && forever -w start app.js && forever logs app.js -f",
+    "stop-backend": "forever stop 0",
+    "start-frontend": "cd frontend && npm run dev"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Devinhollister-graham/coin-base-trader.git"
+  },
+  "author": "Devinhollister-graham",
+  "license": "",
+  "engines": {
+    "node": "^10.10"
+  }
+}

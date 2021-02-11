@@ -1,0 +1,69 @@
+{
+  "name": "coin-base-trader",
+  "private": true,
+  "version": "0.0.0",
+  "description": "a Sails application",
+  "keywords": [],
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@sailshq/lodash": "^3.10.3",
+    "async": "^3.2.0",
+    "axios": "^0.21.1",
+    "bcrypt-nodejs": "0.0.3",
+    "coinbase-pro": "^0.9.0",
+    "csv-parse": "^4.14.2",
+    "csv-parser": "^3.0.0",
+    "geneticalgorithm": "^1.0.2",
+    "jsonwebtoken": "^8.5.1",
+    "mailgun-js": "^0.22.0",
+    "moment": "^2.29.1",
+    "node-cache": "^5.1.2",
+    "node-csv": "^0.1.2",
+    "nodemon": "^2.0.7",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "regenerator-runtime": "^0.11.1",
+    "sails": "^1.4.0",
+    "sails-hook-cron": "^3.2.0",
+    "sails-hook-organics": "^2.2.0",
+    "sails-hook-orm": "^3.0.1",
+    "sails-hook-sockets": "^2.0.0",
+    "sails-mysql": "^1.0.1",
+    "sails.io.js": "^1.2.1",
+    "sma": "^0.1.1",
+    "socket.io-client": "^2.2.0",
+    "stream-to-array": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "5.16.0",
+    "eslint-plugin-nuxt": "^2.0.0"
+  },
+  "scripts": {
+    "start": "NODE_ENV=production node app.js",
+    "dev": "node app.js",
+    "start-inspect": "nodemon --inspect app.js",
+    "test": "npm run lint && npm run custom-tests && echo 'Done.'",
+    "lint": "./node_modules/eslint/bin/eslint.js . --max-warnings=0 --report-unused-disable-directives && echo '✔  Your .js files look good.'",
+    "custom-tests": "echo \"(No other custom tests yet.)\" && echo"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Devinhollister-graham/coin-base-trader.git"
+  },
+  "author": "Devinhollister-graham",
+  "license": "",
+  "engines": {
+    "node": "^15.0"
+  }
+}
